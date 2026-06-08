@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form action="" method="get">
+       <label for="">name</label><input value="aa" type="text" placeholder="username" name="uname" required maxlength="5"><br>
+       <label for="">email</label><input type="email" value="example@email.com" name="email" disabled><br>
+       <label for="">password</label><input name="pass" type="password" >
+       <input type="date"><br>
+       <input type="time"><br>
+       <input type="color" value="red"><br>
+       <label for="">qualification</label><br>
+       <input type="checkbox" name="degree"><label for="">Degree</label><br>
+       <input type="checkbox" name="plus two"><label for="">plus two</label><br>
+       <input type="checkbox"><label for="">diploma</label><br>
+       <input type="radio" name="gender" value="male"><label for="">male</label>
+       <input type="radio" name="gender" value="female"><label for="">female</label><br>
+       
+       <select name="course" id="">
+        <option value="python">python</option>
+        <option value="java">java</option>
+       </select><br>
+       <input type="range" name="range">
+       <input type="month">
+       <input type="number">
+       <input type="submit" value="click here">
+       <input type="text" list="data">
+       <datalist id="data">
+        <option value="apple"></option>
+        <option value="orange"></option>
+        <option value="banana"></option>
+        <option value="grapes"></option>
+        <option value="cherry"></option>
+        
+       </datalist>
+       <style>
+        .input-group{
+            width: 500px;
+            background-color: red;
+            position: relative;
+        }
+        .input1{
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 20px;
+            border: 2px solid green;
+            outline: none;
+        }
+        .input1:focus{
+            border: 5px solid blue;
+        }
+        .label{
+            position: absolute;
+            margin: 10px 0px 0px 10px;
+            font-size: 20px;
+
+        }
+        .input1:focus+.label{
+            margin: -10px 0px 0px 20px;
+            background-color: white;
+        }
+        
+    </style>
+
+       <div class="input-group">
+        <input type="text" class="input1" >
+        <label for="" class="label">username:</label>
+       </div>
+       
+
+    </form>
+</body>
+</html>
