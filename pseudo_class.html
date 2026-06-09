@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .d1{
+        height: 500px;
+        width: 500px;
+        background-color: red;
+        
+    }
+    .d1:hover{
+        background-color: rgb(81, 0, 255);
+    }
+    button{
+        
+        width: 100px;
+        padding: 10px;
+        background-color: greenyellow;
+        color: white;
+    }
+    button:active{
+        background-color: black;
+    }
+    .d2{
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        transition: all 2s;
+        
+    }
+    .d2:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 0px 100px 10px red;
+        border-radius: 100px;
+        
+    }
+    a:link{
+        color: red;
+    }
+    a:visited{
+        color: yellow;
+    }
+</style>
+<body>
+    <div class="d1">
+    </div>
+    <div style="display: flex;justify-content: center;"
+    ><div class="d2"></div></div>
+    
+    <button>click</button>
+    <a href="inetrnalstyle.html">next page</a>
+ 
+    
+</body>
+</html>

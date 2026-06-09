@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="" method="get">
-       <label for="">name</label><input value="aa" type="text" placeholder="username" name="uname" required maxlength="5"><br>
+       <label for="">name</label><input  type="text" placeholder="username" name="uname" required maxlength="5"><br>
        <label for="">email</label><input type="email" value="example@email.com" name="email" disabled><br>
        <label for="">password</label><input name="pass" type="password" >
        <input type="date"><br>
@@ -54,17 +54,19 @@
             outline: none;
         }
         .input1:focus{
-            border: 5px solid blue;
+            border: 5px solid yellowgreen;
         }
         .label{
             position: absolute;
             margin: 10px 0px 0px 10px;
             font-size: 20px;
+            transition: all 5s;
 
         }
         .input1:focus+.label{
             margin: -10px 0px 0px 20px;
             background-color: white;
+            color: blue;
         }
         
     </style>
