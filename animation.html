@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .d1{
+        height: 100px;
+        width: 100px;
+        background-color: red ;
+        animation: d1 5s infinite;
+    }
+    @keyframes d1{
+        0%{background-color: black;}
+        20%{background-color: rgb(31, 147, 67);}
+        40%{background-color: rgb(0, 8, 255);}
+        60%{background-color: rgb(21, 232, 251);}
+        80%{background-color: rgb(239, 248, 0);}
+        100%{background-color: rgb(255, 7, 7);}
+
+    }
+    .d2{
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    
+    .d3{
+        background-color: green;
+        height: 100px;
+        width: 100px;
+        margin: 0px;
+        animation: d3 3s;
+    }
+    @keyframes d3{
+        from{margin-left: -1000px;}
+        to{margin-left: 0px;}
+    }
+    .d4{
+        /* background-color: rgb(26, 0, 128); */
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        margin: 0px;
+        animation: d4 300ms infinite;
+        border-top: 2px solid rgb(255, 47, 47);
+    }
+    @keyframes d4{
+        0%{transform: rotate(0deg);}
+        33%{transform: rotate(120deg);}
+        66%{transform: rotate(240deg);}
+        100%{transform: rotate(360deg);}
+    }
+    .d5{
+        background-color: rgb(33, 118, 144);
+        height: 100px;
+        width: 100px;
+        margin: 50px;
+        animation: d5 5s infinite ;
+        
+    }
+    @keyframes d5{
+        0%,100%{transform: scale(1);}
+        50%{transform: scale(1.2);box-shadow: 0px 0px 80px 10px crimson}
+        
+        
+    }
+
+</style>
+<body>
+    <div class="d1"></div>
+    <div class="d2">
+        <div class="d3"></div>
+    </div>
+    <div class="d4"></div>
+    <div class="d5"></div>
+</body>
+</html>
